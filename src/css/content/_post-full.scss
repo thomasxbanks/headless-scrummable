@@ -1,0 +1,37 @@
+.post-full {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    padding: $b;
+    h1, h2, h3, h4, h5, h6 {
+      margin: ($b * 1.5) 0 $b 0;
+    }
+    figure, .wp-caption {
+      padding: ($b / 2);
+      background: lighten($clr_brand, 50%);
+      figcaption, .wp-caption-text {
+        font-size: $font_size-sml;
+      }
+    }
+}
+
+.page-full {
+    display: block;
+    width: 100%;
+    min-height: 50vh;
+    background-size: cover;
+    background-position: center center;
+    background-color: $clr_brand;
+    background-blend-mode: multiply;
+    color: $clr_white;
+    margin: 0;
+    padding: $b;
+    text-align: left;
+}
+
+.inner {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: $b;
+}

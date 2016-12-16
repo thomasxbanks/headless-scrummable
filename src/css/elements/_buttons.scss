@@ -1,0 +1,50 @@
+/*------------------------------------*\
+  #BUTTON--NORMALISE
+\*------------------------------------*/
+/*
+  Buttons are to be used when the result of the interaction occurs on the same page.
+  Buttons should not be used for page links or submitting a form _to a different page_
+*/
+button {
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent; // i.e. Nexus5/Chrome and Kindle Fire HD 7"
+    border: none;
+    display: block;
+    margin: auto;
+    background: $clr_brand;
+    padding: 20px;
+    text-align: center;
+    color: $clr_white !important;
+    @extend .junior;
+    cursor: pointer !important;
+
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner,
+select::-moz-focus-inner,
+textarea::-moz-focus-inner {
+    border: 0;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 0;
+}
+
+button:disabled {
+    opacity: 0.5;
+    background: #ccc;
+    color: #aaa;
+}
+
+.button {
+    @extend button;
+    text-decoration: none;
+    cursor: pointer !important;
+
+}

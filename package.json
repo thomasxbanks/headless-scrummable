@@ -1,0 +1,48 @@
+{
+  "name": "wprest",
+  "version": "1.0.0",
+  "description": "Headless WordPress test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasxbanks/wprest.git"
+  },
+  "author": "thomasxbanks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasxbanks/wprest/issues"
+  },
+  "homepage": "https://github.com/thomasxbanks/wprest#readme",
+  "dependencies": {
+    "moment": "^2.15.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-preset-es2015": "^6.13.2",
+    "browser-sync": "^2.14.0",
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-delete-unused-images": "0.0.4",
+    "gulp-git": "^1.11.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-modernizr": "^1.0.0-alpha",
+    "gulp-php-minify": "^0.1.2",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-strip-debug": "^1.1.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-uncss": "^1.0.6",
+    "moment": "^2.15.1",
+    "run-sequence": "^1.2.2",
+    "wp-cli": "0.0.5",
+    "yargs": "^4.8.1"
+  }
+}

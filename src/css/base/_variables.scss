@@ -1,0 +1,66 @@
+/*
+  Defined, resuable variables for this build
+*/
+/*
+  Measurements
+ */
+
+/* Baseline is used for calculating all measurements */
+/* This ensures consistency across the build */
+$baseline: 10px;
+$bl: $baseline;
+$b: $baseline;
+
+/*
+  Colors
+*/
+/* replace the first number in the HSB with your Brand's color */
+$clr_black: hsb(200, 02, 10);
+$clr_white: hsb(200, 02, 99);
+
+$clr_brand: hsb(200, 80, 40);
+$clr_brand-alt: hsb(200, 5, 95);
+
+/* Replace the last digits with the corresponding digits from the Brand color */
+$clr_error: hsb(0, 100, 50);
+$clr_success: hsb(120, 100, 50);
+$clr_warning: hsb(30, 100, 50);
+
+
+/*
+   Fonts
+*/
+/* Face Stack/Family */
+$font_face-main: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+$font_face-accent: "Raleway", "Times New Roman", Times, Baskerville, Georgia, serif;
+
+/* Sizes */
+$font_size-xsm: ($b * 1);
+$font_size-sml: ($b * 1.2);
+$font_size-std: ($b * 1.6);
+$font_size-med: ($b * 2);
+$font_size-lrg: ($b * 3);
+$font_size-xlg: ($b * 4);
+
+/* Calculate line-heights */
+$lh: 1.7; // Usage: line-height: ($font_size-std * $lh);
+
+/* Font Colors */
+$font_color-main: $clr_black;
+$font_color-invert: $clr_white;
+
+/* Transition Easings */
+$ease-main: cubic-bezier(.66,.04,.51,.92);
+$ease-swoosh: cubic-bezier(.53,-0.4,.81,1.46);
+
+/* Transition Speeds */
+$speed-fastest: 100ms;
+$speed-fast: 250ms;
+$speed-std: 500ms;
+$speed-slow: 800ms;
+$speed-slowest: 1000ms;
+
+/*
+  Just for fun, here's a link to Donovan Hutchinson's CSS Animations for all 12 of the 'Disney Principles'
+  http://codepen.io/collection/AxKOdY/3/
+*/

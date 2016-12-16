@@ -1,0 +1,42 @@
+#masthead {
+  background: $clr_brand;
+  color: $clr_white;
+  box-shadow: inset 0 -4px 0 darken($clr_brand, 10%);
+  nav {
+    display: block;
+    width: 100%;
+    padding: $b 0;
+    ul {
+      font-size: 0;
+      list-style-type: none;
+      padding: 0;
+      li {
+        display: inline-block;
+        @include widthSibling;
+        a {
+          display: block;
+          width: 100%;
+          font-size: $font_size-std;
+          color: $clr_white;
+          text-decoration: none;
+          padding: $b;
+          box-shadow: inset -1px -1px 0 lighten($clr_brand, 5%), inset 1px 1px 0 lighten($clr_brand, 5%);
+          &:hover {
+            background: lighten($clr_brand, 5%);
+          }
+        }
+      }
+    }
+  }
+}
+
+#colophon {
+  background: $clr_black;
+  color: $clr_white;
+  box-shadow: inset 0 4px 0 darken($clr_brand, 10%);
+}
+
+main {
+  text-align: center;
+  margin: 0 auto;
+}

@@ -1,0 +1,46 @@
+// Styles for links.
+// Remember that these styles will also affect <a> tags such as anchors or ones you want to style as buttons
+
+[class^="post-"] {
+    a {
+        color: $clr_brand;
+    }
+
+    a:link {
+        color: $clr_brand;
+    }
+
+    a:hover {
+        color: lighten($clr_brand, 10%);
+    }
+
+    a:active {
+        color: lighten($clr_brand, 30%);
+    }
+
+    a:visited {
+        color: darken($clr_brand, 10%);
+    }
+}
+
+[class^="page-"] {
+    a {
+        color: $clr_white;
+    }
+
+    a:link {
+        color: $clr_white;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    a:active {
+        text-decoration: double-underline;
+    }
+
+    a:visited {
+        opacity: 0.9;
+    }
+}

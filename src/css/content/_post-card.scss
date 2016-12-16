@@ -1,0 +1,38 @@
+.post-card {
+  @media screen and (min-width: 660px){
+    display: inline-block;
+    width: 300px;
+  }
+
+  @media screen and (max-width: 659px){
+    display: block;
+    width: calc(100% - 20px);
+  }
+
+  vertical-align: top;
+  border: 1px solid darken($clr_brand-alt, 10%);
+  padding: 10px;
+  margin: 10px;
+  background: $clr_brand-alt;
+  text-align: left;
+  .meta {
+    @extend .junior;
+    font-size: $font_size-sml;
+    table {
+      width: 100%;
+    }
+    td {
+      vertical-align: top;
+      line-height: 1.5;
+      &:first-child {
+        font-weight: bold;
+        padding-right: ($b / 2);
+        text-transform: uppercase;
+      }
+    }
+  }
+  img, figure {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}

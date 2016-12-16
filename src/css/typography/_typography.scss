@@ -1,0 +1,41 @@
+// Style the highlight selection of web copy
+
+::-moz-selection {
+    color: $font_color-invert;
+    background: #000000;
+}
+
+::selection {
+    color: $font_color-invert;
+    background: #000000;
+}
+// Reset headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    display: block;
+    padding: 0;
+    margin: 0;
+    @extend .tony;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+em,
+i {
+    font-style: italic;
+}
+
+p {
+    display: block;
+    padding: $b 0;
+    margin: 0;
+    @extend .junior;
+    line-height: $lh;
+}
